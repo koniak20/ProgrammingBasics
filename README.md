@@ -15,4 +15,3 @@ __Legend__
 ## Tasks 
  - [ ] add images with contents
  - [ ] add comments to tasks
- - [ ] translate tasks to english
