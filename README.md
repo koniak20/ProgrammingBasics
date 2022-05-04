@@ -13,5 +13,5 @@ __Legend__
 > lt - stands for lab task
 
 ## Tasks 
- - [ ] add images with contents
- - [ ] add comments to tasks
+- [x] add images with contents
+- [ ] add comments to tasks
