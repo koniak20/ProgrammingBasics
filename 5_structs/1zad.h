@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 
-typedef enum { MON, TUE, WED, THU, FRI, SAT, SUN}Day;
-typedef enum {DAY_EARLIER, DAY_LATER,TIME_EARLIER, TIME_LATER}Action;
+typedef enum { MON, TUE, WED, THU, FRI, SAT, SUN} Day;
+typedef enum {DAY_EARLIER, DAY_LATER,TIME_EARLIER, TIME_LATER} Action;
 
 Day StringToDay(char* text){
 	Day result;
