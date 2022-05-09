@@ -3,7 +3,7 @@
 
 typedef enum {FALSE, TRUE} boolean;
 
-typedef struct Terms{
+typedef struct {
 	int hour;
 	int minute;
 	int duration;

@@ -74,19 +74,19 @@ Day Day_prevDay(Day day){
 
 typedef enum {FALSE, TRUE} boolean;
 
-typedef struct Terms{
+typedef struct {
 	int hour;
 	int minute;
 	int duration;
 	Day day;
 } Term;
 
-typedef struct Lessons{
+typedef struct {
 	Term term;
 	char* lesson;
 } Lesson;
  
-typedef struct Limits{
+typedef struct {
 	int min_h;
 	int min_m;
 	int max_h;
@@ -115,8 +115,7 @@ boolean Lesson_postpone(Lesson* lesson,int hour, int minute, Day day){
 		return TRUE;
 	}
 	else{
-		char c = result.term.minute < 10 ? '0' : 1;
-		printf("Lesson \"%s\" can't be moved to date \"%s, %d:%d%c\"\n",result.lesson,Day_toString(result.term.day),result.term.hour,result.term.minute,c);
+		printf("Lesson \"%s\" can't be moved to date \"%s, %d:%02d\"\n",result.lesson,Day_toString(result.term.day),result.term.hour,result.term.minute);
 		return FALSE;
 	}
 }
@@ -158,8 +157,7 @@ void Lesson_laterTime(Lesson* lesson){
 
 char* Lesson_toString(Lesson* lesson){
 	char* result = (char*) malloc(sizeof(char)*200);
-	char c = lesson->term.minute < 10 ? '0' : 1;
-	sprintf(result,"%s, %s %d:%c%d [%d]",lesson->lesson,Day_toString(lesson->term.day),lesson->term.hour,c,lesson->term.minute,lesson->term.duration);
+	sprintf(result,"%s, %s %d:%02d [%d]",lesson->lesson,Day_toString(lesson->term.day),lesson->term.hour,lesson->term.minute,lesson->term.duration);
 	return result;
 }
 void Term_init(Term* term, int hour, int minute, int duration, Day day){
