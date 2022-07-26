@@ -1,4 +1,4 @@
-> Made by mwkowal, contact me mwkowal@student.agh.edu.pl last change: 25.06.2022
+> Made by mwkowal, contact me mwkowal@student.agh.edu.pl last change: 25.07.2022
 
 # PodstawyProgramowania
 lab 2 | lab 3| lab 4 | lab 5 | lab 6 | lab 7 | sum
